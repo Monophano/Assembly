@@ -8,7 +8,7 @@ _start:
     movl $4, %eax   // appelle de sys_write
     movl $1, %ebx   // Sortie standart STDOUT
     movl $str, %ecx // appelle de la chaine à afficher
-    movl $16, %edx  // indique la taille de la chaine à afficher
+    movl $15, %edx  // indique la taille de la chaine à afficher
     int $0x80       // interruption du kernel
 
     /* Fin de programme */
