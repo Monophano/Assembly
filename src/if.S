@@ -51,7 +51,7 @@ equal:
     movl    $4      , %eax  // appelle de sys_write
     movl    $1      , %ebx  // Sortie standart STDOUT
     movl    $msg3   , %ecx  // appelle de la chaine à afficher
-    movl    $27     , %edx  // indique la taille de la chaine à afficher
+    movl    $28     , %edx  // indique la taille de la chaine à afficher
     int     $0x80           // interruption du kernel
 
     /* Fermeture du programme */
